@@ -1,0 +1,4 @@
+{
+  "USER": { "value": "1001", "description": "Standard user privileges" },
+  "ADMIN": { "value": "2009", "description": "Administrator privileges" }
+}
