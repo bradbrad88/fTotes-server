@@ -1,0 +1,29 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "baseUrl": "./src",
+    "allowJs": true,
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "paths": {
+      "src/*": ["./*"],
+      "routes/*": ["./routes/*"]
+    }
+  },
+  "ts-node": {
+    "typeCheck": true,
+    "files": true,
+    "compilerOptions": {
+      "allowJs": true,
+      "paths": {
+        "src/*": ["./*"],
+        "routes/*": ["./routes/*"]
+      },
+      "baseUrl": "./src",
+      "module": "CommonJS"
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src"]
+}
