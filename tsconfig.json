@@ -12,17 +12,7 @@
     }
   },
   "ts-node": {
-    "typeCheck": true,
-    "files": true,
-    "compilerOptions": {
-      "allowJs": true,
-      "paths": {
-        "src/*": ["./*"],
-        "routes/*": ["./routes/*"]
-      },
-      "baseUrl": "./src",
-      "module": "CommonJS"
-    }
+    "typeCheck": true
   },
   "exclude": ["node_modules"],
   "include": ["./src"]
