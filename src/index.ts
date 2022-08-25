@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 import "dotenv/config";
 import moduleAlias from "module-alias";
-moduleAlias.addAlias("src", "../src");
-moduleAlias.addAlias("routes", "../src/routes");
+const src = __dirname;
+moduleAlias.addAliases({
+  src: src,
+  routes: src + "/routes",
+});
 
 process.nextTick(async () => {
   const app = (await import("src/app")).default;
